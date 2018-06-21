@@ -21,16 +21,20 @@ mvn install:install-file -Dfile=atlassian-extras-api-3.3.0.jar -DgroupId=com.atl
 mvn install:install-file -Dfile=atlassian-extras-common-3.3.0.jar -DgroupId=com.atlassian.extras -DartifactId=atlassian-extras-common -Dversion=3.3.0 -Dpackaging=jar
 mvn install:install-file -Dfile=atlassian-extras-decoder-api-3.3.0.jar -DgroupId=com.atlassian.extras -DartifactId=atlassian-extras-decoder-api -Dversion=3.3.0 -Dpackaging=jar
 ```
-参数 `${atlassian-x.x}` 是下载的atlassian项目路径，请自行替换
-参数 `-Dfile` 是jar包位置
+
+ `${atlassian-x.x}` 是下载的atlassian项目路径，请自行替换
+
+ `-Dfile` 是jar包位置
 
 ---
 
 4. 下载 & 编译项目
-4.1 使用ide内部的maven工具进行打包
-4.2 使用命令行进行打包 `mvn package`
+
+   4.1 使用ide内部的maven工具进行打包
+   
+   4.2 使用命令行进行打包 `mvn package`
 
 ---
 
 5. 生成 license code
-运行 test/java/AtlassianLicenseGenerator 的 main方法
+运行 test/java/AtlassianLicenseGenerator
